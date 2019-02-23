@@ -1,0 +1,45 @@
+#  Limpar TELA
+
+>>> import os
+>>> os.system('clear')
+
+Se for Windows:
+
+>>> import os
+>>> os.system('cls')
+
+
+#  Data 
+C:\Dev\Python\Python\src\Alura (master -> origin)                                                 
+λ python                                                                                          
+Python 3.7.2 (tags/v3.7.2:9a3ffc0492, Dec 23 2018, 23:09:28) [MSC v.1916 64 bit (AMD64)] on win32 
+Type "help", "copyright", "credits" or "license" for more information.                            
+>>> dia = 01                                                                                      
+  File "<stdin>", line 1                                                                          
+    dia = 01                                                                                      
+           ^                                                                                      
+SyntaxError: invalid token                                                                        
+>>> dia = 1                                                                                       
+>>> mes = 9                                                                                       
+>>> ano = 2018                                                                                    
+>>> print(dia,mes,ano,sep="/")                                                                    
+1/9/2018                                                                                          
+>>>  
+
+#  Tipagem do Python
+
+C:\Dev\Python\Python\src\Alura (master -> origin)                                                     
+λ python                                                                                              
+Python 3.7.2 (tags/v3.7.2:9a3ffc0492, Dec 23 2018, 23:09:28) [MSC v.1916 64 bit (AMD64)] on win32     
+Type "help", "copyright", "credits" or "license" for more information.                                
+>>> pais = "Brasil"                                                                                   
+>>> type(pais)                                                                                        
+<class 'str'>                                                                                         
+>>> pais = 55                                                                                         
+>>> type(pais)                                                                                        
+<class 'int'>                                                                                         
+>>> pais = 55.11                                                                                      
+>>> type(pais)                                                                                        
+<class 'float'>                                                                                       
+>>>                                                                                                   
+                                                                                                                                                                                                  
