@@ -41,5 +41,64 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> pais = 55.11                                                                                      
 >>> type(pais)                                                                                        
 <class 'float'>                                                                                       
->>>                                                                                                   
-                                                                                                                                                                                                  
+>>>  
+
+####################################
+
+Interpolação de string  e formatação de valores 
+
+"R$ {:7.1f}".format(1000.12)
+No exemplo acima, queremos um número com 7 casas inteiras, sendo uma delas decimal, resultado é R$ 1000.1
+
+"R$ {:07.2f}".format(4.11)
+Neste exemplo, queremos um número com 7 casas inteiras, sendo duas delas decimais, resultado é R$ 0004.11. Como colocamos um número de casas inteiras superior a quantidade de casas inteiras do número, o Python coloca 0 (zeros) à esquerda. Interessante também é que a função format até arredonda, por exemplo:
+
+"R$ {:7.1f}".format(1000.16)
+Retorna:
+
+R$  1000.2
+
+>>> print("tentativa {} de {}".format(10,10)) 
+tentativa 10 de 10                            
+>>> print("tentativa {} de {}".format(10,20)) 
+tentativa 10 de 20                            
+>>> "tentativa {} de {}".format(10,20)        
+'tentativa 10 de 20'                          
+>>> "tentativa {1} de {0}".format(10,20)      
+'tentativa 20 de 10'                          
+>>> "R$ {}".format(1.59)                      
+'R$ 1.59'                                     
+>>> "R$ {:f}".format(1.59)                    
+'R$ 1.590000'                                 
+>>> "R$ {:.2f}".format(1.59)                  
+'R$ 1.59'                                     
+>>> "R$ {:7.2f}".format(1.59)                 
+'R$    1.59'                                  
+>>> "R$ {:07.2f}".format(1.59)                
+'R$ 0001.59'                                  
+>>> "R$ {:08.3f}".format(1.59)                
+'R$ 0001.590'                                 
+>>> "R$ {:08d}".format(4)                     
+'R$ 00000004'                                 
+>>> "R$ {:07d}".format(4)                     
+'R$ 0000004'                                  
+>>> "R$ {:7d}".format(4)                      
+'R$       4'                                  
+>>> "Data {:2d}/{:2d}".format(1,9)            
+'Data  1/ 9'                                  
+>>> "Data {:02d}/{:02d}".format(1,9)          
+'Data 01/09'                                  
+>>> "Data {:02d}/{:02d}".format(15,11)        
+'Data 15/11'                                  
+>>>                                           
+
+
+Funcoes embutidas built-in
+https://docs.python.org/3.3/library/functions.html
+
+Modulos
+https://docs.python.org/3/library/
+
+Importação de Modulos Random()
+
+https://docs.python.org/3/library/random.html#random.random
