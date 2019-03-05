@@ -1,0 +1,9 @@
+
+# link: https://pt.stackoverflow.com/questions/229335/como-executar-o-metodo-dentro-de-um-arquivo-py-pelo-terminal-linux
+# Chamar metodo no comando com parametros
+
+def metodo1(param1):
+    print("O metodo 1 recebeu o parametro '{0}'".format(param1))
+
+terminal:
+c:\pasta> python met.py metodo1 teste
