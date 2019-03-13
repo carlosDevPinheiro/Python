@@ -1,4 +1,4 @@
-import random
+﻿import random
 
 print("*********************************")
 print("Bem vindo ao jogo de Adivinhação!")
@@ -39,7 +39,8 @@ print("Fim do Jogo")
 
 
 # Parei na Aula:  Nível e Pontuação > Adicionando níveis ao jogo
-
+# Python proxima aula
+# https://cursos.alura.com.br/course/python-3-introducao-a-nova-versao-da-linguagem/task/22811
 
 
 # Usando WHILE
