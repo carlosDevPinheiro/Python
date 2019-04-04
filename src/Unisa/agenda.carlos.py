@@ -42,7 +42,7 @@ def EscolhaUsuario():
         EscolhaUsuario()
 
 def criar_banco():   
-    conn = sqlite3.connect('minha_agenda.db')
+    conn = sqlite3.connect('agenda.carlos.db')
     ponteiro = conn.cursor()   
     ponteiro.execute(""" CREATE TABLE IF NOT EXISTS Contatos(id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, nome VARCHAR NOT NULL, telefone VARCHAR NOT NULL)""")
     conn.close()
@@ -51,7 +51,8 @@ def criar_banco():
 def cadastrar():
     n = input("digite nome do contato: ")
     t = input("digite telefone do contato: ")
-    conn = sqlite3.connect('minha_agenda.db')
+    
+    conn = sqlite3.connect('agenda.carlos.db')
     ponteiro = conn.cursor()   
     ponteiro.execute("""INSERT INTO Contatos(nome, telefone) VALUES(?, ?) """, (n, t))
     conn.commit()
@@ -65,7 +66,7 @@ def cadastrar():
 
 
 def mostrar_todos():
-    conn = sqlite3.connect('minha_agenda.db')
+    conn = sqlite3.connect('agenda.carlos.db')
     ponteiro = conn.cursor()
     ponteiro.execute("""SELECT * FROM Contatos""")
     
@@ -85,7 +86,7 @@ def mostrar_todos():
 def alterar():
     id = int( input("Digite o id do contato: "))
     novo_telefone = input("Digite novo numero de telefone: ")
-    conn = sqlite3.connect('minha_agenda.db')
+    conn = sqlite3.connect('agenda.carlos.db')
     ponteiro = conn.cursor()
     ponteiro.execute("""UPDATE Contatos SET telefone= ? WHERE id = ? """,(novo_telefone, id))
     conn.commit()
@@ -99,7 +100,7 @@ def alterar():
 
 def consultar():
     id = input("Digite o id a ser consultado: ")   
-    conn = sqlite3.connect('minha_agenda.db')
+    conn = sqlite3.connect('agenda.carlos.db')
     ponteiro = conn.cursor()
     ponteiro.execute("""SELECT * FROM Contatos WHERE id = ?""",(id))
     for linha in ponteiro.fetchall():
@@ -116,7 +117,7 @@ def consultar():
 
 def excluir():
     id = input("Digite o id a ser consultado: ")   
-    conn = sqlite3.connect('minha_agenda.db')
+    conn = sqlite3.connect('agenda.carlos.db')
     ponteiro = conn.cursor()
     ponteiro.execute("""DELETE FROM Contatos WHERE id = ?""",(id))
     conn.commit()
