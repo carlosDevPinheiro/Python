@@ -1,0 +1,30 @@
+print (2+3)
+print (2.5+4)
+print (2.1+3.2)
+print (-3+4)
+print (5+-3)
+print (4-2)
+print (2-8)
+print (2.6-3)
+print (-2-3)
+print (4--3)
+print (2*10)
+print (-4*3)
+print (4/2)
+print (6/-3)
+print (-10/5)
+print (5/2)
+print (-5/2)
+print (5/2.0)
+print (5.0/2)
+print (2**2)
+print (-2**2)
+print ((-2)**2)
+print pow(2,3)
+print (3+5)/2*2
+print (3+5)/(2*2)
+print (1/2)*2
+print (1/2.0)*2 
+print ((5+10)/3)**2  
+
+

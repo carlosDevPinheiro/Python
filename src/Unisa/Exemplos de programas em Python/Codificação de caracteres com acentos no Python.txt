@@ -1,0 +1,41 @@
+\xe0 = à
+\xe1 = á
+\xe2 = â
+\xe3 = ã
+\xe4 = ä
+\xe8 = è
+\xe9 = é
+\xea = ê
+\xeb = ë
+\xec = ì
+\xed = í
+\xef = ï
+\xf2 = ò
+\xf3 = ó
+\xf4 = ô
+\xf6 = ö
+\xfa = ú
+\xfb = û
+\xfc = ü
+\xf9 = ù
+\xf1 = ñ
+\xc2 = Â
+\xc0 = À
+\xc1 = Á
+\xc3 = Ã
+\xc9 = É
+\xc8 = È
+\xcc = Ì
+\xcd = Í
+\xcf = Ï
+\xd2 = Ò
+\xd3 = Ó
+\xd4 = Ô
+\xd5 = Õ
+\xd6 = Ö
+\xd9 = Ù
+\xda = Ú
+\xdc = Ü
+
+
+

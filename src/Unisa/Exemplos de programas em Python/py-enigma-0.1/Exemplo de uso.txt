@@ -1,0 +1,14 @@
+Exemplo de uso do Enigma no Python:
+
+pyenigma.py [-h] [-k KEY_FILE] [-d DAY] [-r ROTOR [ROTOR ...]]
+            [-i RING_SETTING [RING_SETTING ...]]
+            [-p PLUGBOARD [PLUGBOARD ...]] [-u REFLECTOR] [-s START]
+            [-t TEXT] [-f FILE] [-x REPLACE_CHAR] [-z] [-v]
+
+Ex.:
+
+python pyenigma.py -r I II III -u B -s WXC -t KCH
+
+Resultado: ASL
+
+Detalhe: funciona com Python 3.5
